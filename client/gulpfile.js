@@ -7,9 +7,9 @@ gulp.task('default', ['css'], () => {
 })
 
 gulp.task('css', () => {
-  gulp.src("src/sass/*.scss")
-  .pipe(sass({outputStyle: 'compressed'})
-  .on('error', sass.logError) 
+  gulp.src("src/sass/bundle.scss")
+  .pipe(sass({outputStyle: 'compressed'}))
+  .on('error', sass.logError)
   .pipe(autoprefixer({browsers: ['last 2 versions']}))
-  .pipe(gulp.dest("public/css"));
+  .pipe(gulp.dest("public/css"))
 })
