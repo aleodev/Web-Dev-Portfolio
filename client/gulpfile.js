@@ -19,5 +19,5 @@ gulp.task('prodcss', () => {
   .pipe(sass({outputStyle: 'compressed'}))
   .on('error', sass.logError)
   .pipe(autoprefixer({browsers: ['last 2 versions']}))
-  .pipe(gulp.dest("production/css"))
+  .pipe(gulp.dest("../build/css"))
 })
