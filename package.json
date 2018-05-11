@@ -16,8 +16,9 @@
     "react-scripts": "1.1.4"
   },
   "scripts": {
-    "dev": "concurrently \"npm run server\" \"cd client && npm run start\" \"cd client && gulp\"",
+    "dev": "concurrently \"npm run devServer\" \"cd client && npm run start\" \"cd client && gulp\"",
     "prod": "cd client && webpack --mode production && gulp prodcss",
-    "server": "nodemon --watch server ./server/app localhost"
+    "devServer": "PORT=3001 nodemon --watch server ./server/app localhost",
+    "prodServer": "PORT=80 nodemon --watch server ./server/app localhost"
   }
 }
