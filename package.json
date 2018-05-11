@@ -17,6 +17,7 @@
   },
   "scripts": {
     "dev": "concurrently \"npm run server\" \"cd client && npm run start\" \"cd client && gulp\"",
+    "prod": "cd client && webpack --mode production && gulp prodcss",
     "server": "nodemon --watch server ./server/app localhost"
   }
 }

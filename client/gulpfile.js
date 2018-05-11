@@ -13,3 +13,11 @@ gulp.task('css', () => {
   .pipe(autoprefixer({browsers: ['last 2 versions']}))
   .pipe(gulp.dest("public/css"))
 })
+
+gulp.task('prodcss', () => {
+  gulp.src("src/sass/bundle.scss")
+  .pipe(sass({outputStyle: 'compressed'}))
+  .on('error', sass.logError)
+  .pipe(autoprefixer({browsers: ['last 2 versions']}))
+  .pipe(gulp.dest("production/css"))
+})
