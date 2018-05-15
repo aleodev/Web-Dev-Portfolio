@@ -1,18 +1,16 @@
 import React, { Component } from 'react'
+import Header from './components/Header'
+import Home from './containers/Home'
 
 class App extends Component {
   render () {
     return (
-      <div>
-        <header>
-          <h1>Welcome to React</h1>
-        </header>
-        <p>
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+      <div className="wrapper">
+        <Header></Header>
+        <Home></Home>
       </div>
     )
   }
 }
 
-export default App
+export default App;
