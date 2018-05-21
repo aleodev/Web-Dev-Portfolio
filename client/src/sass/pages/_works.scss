@@ -1,0 +1,29 @@
+// WORKS // // WORKS // // WORKS //
+#works-page {
+  background: linear-gradient(181deg, #1d1d1d, #000000);
+  background-size: 400% 400%;
+
+  -webkit-animation: works 10s ease infinite;
+  -moz-animation: works 10s ease infinite;
+  animation: works 10s ease infinite;
+
+  @-webkit-keyframes works {
+      0%{background-position:31% 0%}
+      50%{background-position:70% 100%}
+      100%{background-position:31% 0%}
+  }
+  @-moz-keyframes works {
+      0%{background-position:31% 0%}
+      50%{background-position:70% 100%}
+      100%{background-position:31% 0%}
+  }
+  @keyframes works {
+      0%{background-position:31% 0%}
+      50%{background-position:70% 100%}
+      100%{background-position:31% 0%}
+  }
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
+// WORKS // // WORKS // // WORKS //
