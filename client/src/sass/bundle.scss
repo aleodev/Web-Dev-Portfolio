@@ -1,7 +1,8 @@
 @import 'reset';
+@import 'pageSwitcher';
 @import 'fonts';
 @import 'header';
-@import 'body';
+@import 'pages/pages';
 
 #site{
   opacity: 0;

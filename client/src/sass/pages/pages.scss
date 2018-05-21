@@ -1,0 +1,17 @@
+@import 'home';
+@import 'about';
+@import 'works';
+@import 'contact';
+body {
+  display: grid;
+  font-family: sans-serif;
+  background-color: black;
+}
+
+.grid-wrapper {
+  display: grid;
+  grid-template-columns: repeat(12, [col-start] 1fr);
+  grid-template-rows: 1fr;
+  height: 100vh;
+  overflow: auto;
+}
