@@ -44,9 +44,9 @@ class Header extends Component {
         <a href="#contact-page" id="contacts">Contact</a>
       </div>
       <div className="social">
-        <a target="_blank" href="https://github.com/aleodev" id="github"><img id="social" src="/assets/img/social/github.png.gz"/></a>
-        <a target="_blank" href="https://twitter.com/Alexodev_" id="twitter"><img id="social" src="/assets/img/social/twitter.png.gz"/></a>
-        <a target="_blank" href="https://instagram.com/" id="instagram"><img id="social" src="/assets/img/social/instagram.png.gz"/></a>
+        <a target="_blank" rel="noopener noreferrer" href="https://github.com/aleodev" id="github"><img id="social" src="/assets/img/social/github.png.gz"/></a>
+        <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/Alexodev_" id="twitter"><img id="social" src="/assets/img/social/twitter.png.gz"/></a>
+        <a target="_blank" rel="noopener noreferrer" href="https://instagram.com/" id="instagram"><img id="social" src="/assets/img/social/instagram.png.gz"/></a>
       </div>
     </header>)
   }
