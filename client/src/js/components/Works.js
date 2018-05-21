@@ -2,7 +2,7 @@ import React from 'react'
 
 const Works = (props) => {
   return (
-    <section id="works"></section>
+    <section id="works-page"></section>
   )
 }
 
