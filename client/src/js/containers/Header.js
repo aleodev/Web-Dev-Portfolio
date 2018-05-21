@@ -2,28 +2,37 @@ import React, {Component} from 'react'
 import $ from 'jquery'
 
 class Header extends Component {
-  componentDidMount() {
-    $(window).scroll(function() {
-      var offsetTop = $("#about-page").offset().top;
-      var scroll = $(window).scrollTop();
+  componentDidMount () {
+    $(window).scroll(function () {
+      var scroll = $(window).scrollTop()
       if (scroll >= 100) {
-        $(".header").addClass("blackheader");
+        $('.header').addClass('blackheader')
       } else {
-        $(".header").removeClass("blackheader");
+        $('.header').removeClass('blackheader')
       }
-    });
-    $(window).on("load resize scroll", function() {
-      if ($(window).width() < 1024) {
+    })
+    $(window).on('load resize scroll', function () {
+      var offsetTop = $('#about-page').offset().top
+      var scroll = $(window).scrollTop()
+      if ($(window).width() < 1024 || scroll > offsetTop) {
         console.log('add small header')
-        $(".header").addClass("smallheader");
+        $('.header').addClass('smallheader')
       } else {
         console.log('remove small header')
-        $(".header").removeClass("smallheader");
+        $('.header').removeClass('smallheader')
       }
-    });
+    })
+    $('.menu-btn').click(function () {
+      $('.responsive-menu').addClass('expand')
+      $('.menu-btn').addClass('btn-none')
+    })
 
+    $('.close-btn').click(function () {
+      $('.responsive-menu').removeClass('expand')
+      $('.menu-btn').removeClass('btn-none')
+    })
   }
-  render() {
+  render () {
     return (<header className="header">
       <div className="logo">
         <a href="#"><img id="logo" src="/assets/img/logo.png.gz"/></a>
