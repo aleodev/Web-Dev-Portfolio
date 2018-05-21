@@ -5,14 +5,14 @@ import $ from 'jquery'
 import sr from './pckgs/scrollReveal.js'
 
 class App extends Component {
-  componentDidMount() {
-    $("#site").delay(100).animate({
+  componentDidMount () {
+    $('#site').delay(100).animate({
       opacity: 1
     }, 700)
-    $(".logo").delay(500).animate({
+    $('.logo').delay(500).animate({
       opacity: 1
     }, 700)
-    $(".social").delay(500).animate({
+    $('.social').delay(500).animate({
       opacity: 1
     }, 700)
     sr.reveal('.name', {
@@ -34,7 +34,7 @@ class App extends Component {
       opacity: 0
     })
   }
-  render() {
+  render () {
     return (<div id="site">
       <Header></Header>
       <div className="wrapper">
@@ -44,4 +44,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default App
