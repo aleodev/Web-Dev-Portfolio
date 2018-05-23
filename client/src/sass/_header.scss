@@ -27,6 +27,7 @@
     letter-spacing: 0.3em;
     color: white;
     text-align: center;
+    transition: 0.5s linear all;
   }
 
   .logo {
@@ -36,19 +37,23 @@
 
     img {
       max-width: 80px;
+        transition: 0.5s linear all;
     }
   }
 
   .menu {
     @extend %headerDiv;
+    transition: 0.5s linear all;
   }
 
   .social {
     @extend %headerDiv;
     opacity: 0;
 
+
     img {
       max-width: 30px;
+        transition: 0.5s linear all;
     }
   }
 }

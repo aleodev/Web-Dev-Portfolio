@@ -2,8 +2,8 @@ import React, {Component} from 'react'
 import $ from 'jquery'
 
 class Header extends Component {
-  componentDidMount () {
-    $(window).scroll(function () {
+  componentDidMount() {
+    $(window).scroll(function() {
       var scroll = $(window).scrollTop()
       if (scroll >= 100) {
         $('.header').addClass('blackheader')
@@ -11,10 +11,10 @@ class Header extends Component {
         $('.header').removeClass('blackheader')
       }
     })
-    $(window).on('load resize scroll', function () {
+    $(window).on('load resize scroll click', function() {
       var offsetTop = $('#about-page').offset().top
       var scroll = $(window).scrollTop()
-      if ($(window).width() < 1024 || scroll > offsetTop) {
+      if ($(window).width() < 1024 || scroll > offsetTop - 1) {
         console.log('add small header')
         $('.header').addClass('smallheader')
       } else {
@@ -22,17 +22,14 @@ class Header extends Component {
         $('.header').removeClass('smallheader')
       }
     })
-    $('.menu-btn').click(function () {
-      $('.responsive-menu').addClass('expand')
-      $('.menu-btn').addClass('btn-none')
+    $('.menu-btn').click(function() {
+      $('.responsive-menu').toggleClass('expand')
     })
+    }
 
-    $('.close-btn').click(function () {
-      $('.responsive-menu').removeClass('expand')
-      $('.menu-btn').removeClass('btn-none')
-    })
-  }
-  render () {
+
+
+  render() {
     return (<header className="header">
       <div className="logo">
         <a href="#"><img id="logo" src="/assets/img/logo.png.gz"/></a>

@@ -6,22 +6,22 @@ import Works from '../components/Works'
 import $ from 'jquery'
 
 class Main extends Component {
-  componentDidMount() {
-    var $root = $('html, body');
+  componentDidMount () {
+    var $root = $('html, body')
 
-    $('a[href^="#"]').click(function() {
-      var href = $.attr(this, 'href');
+    $('a[href^="#"]').click(function () {
+      var href = $.attr(this, 'href')
 
       $root.animate({
         scrollTop: $(href).offset().top
-      }, 500, function() {
-        window.location.hash = href;
-      });
+      }, 500, function () {
+        window.location.hash = href
+      })
 
-      return false;
-    });
+      return false
+    })
   }
-  render() {
+  render () {
     return (<div className="main">
       <Home/>
       <About/>
