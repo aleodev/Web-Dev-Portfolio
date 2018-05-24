@@ -19,9 +19,15 @@ class Header extends Component {
       } else {
         $('.header').removeClass('smallheader')
       }
+      if ($(window).width() < 1024) {
+        $('.social').css('opacity', 1)
+      } else {
+        $('.social').css('opacity', 0)
+      }
+
     })
-    $('.mobile-a').on('click', function(){
-      $( "#mobile" ).prop( "checked", false )
+    $('.mobile-a').on('click', function() {
+      $("#mobile").prop("checked", false)
     })
 
   }
@@ -48,19 +54,22 @@ class Header extends Component {
         <nav>
           <ul>
             <li>
-              <a class="mobile-a" href="#home-page">Home</a>
+              <a className="mobile-a" href="#home-page">Home</a>
             </li>
             <li>
-              <a class="mobile-a" href="#about-page">About</a>
+              <a className="mobile-a" href="#about-page">About</a>
             </li>
             <li>
-              <a class="mobile-a" href="#works-page">Works</a>
+              <a className="mobile-a" href="#works-page">Works</a>
             </li>
             <li>
-              <a class="mobile-a" href="#contact-page">Contact</a>
+              <a className="mobile-a" href="#contact-page">Contact</a>
             </li>
           </ul>
         </nav>
+        <a target="_blank" rel="noopener noreferrer" href="https://github.com/aleodev" id="github"><img id="social" src="/assets/img/social/github.png.gz"/></a>
+        <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/Alexodev_" id="twitter"><img id="social" src="/assets/img/social/twitter.png.gz"/></a>
+        <a target="_blank" rel="noopener noreferrer" href="https://instagram.com/" id="instagram"><img id="social" src="/assets/img/social/instagram.png.gz"/></a>
       </div>
     </header>)
   }
