@@ -167,11 +167,7 @@ $blackColor: #000000;
     }
 
     img {
-      @media screen and (max-width: 980px) {
-        visibility: hidden;
-        opacity: 0;
-        display: none;
-      }
+
       max-width: 30px;
       transition: 0.5s linear all;
     }

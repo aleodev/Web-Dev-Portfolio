@@ -15,18 +15,6 @@ $home-lg: 1400px; // WIDTH PAGE-CONTAINER-BREAKPOINTS //
   .home-container {
     padding: 0 10px;
 
-    .home-social {
-      img {
-        @media screen and (max-width: 980px) {
-          visibility: hidden;
-          opacity: 0;
-          display: none;
-        }
-        max-width: 30px;
-        transition: 0.5s linear all;
-      }
-    }
-
     .name {
       padding-top: 35vh;
       display: block;
