@@ -14,16 +14,16 @@ class Header extends Component {
     $(window).on('load resize scroll click', function() {
       var offsetTop = $('#about-page').offset().top
       var scroll = $(window).scrollTop()
-      if ($(window).width() < 1024 || scroll > offsetTop - 1) {
+      if ($(window).width() < 1100 || scroll > offsetTop - 1) {
         $('.header').addClass('smallheader')
       } else {
         $('.header').removeClass('smallheader')
       }
-      if ($(window).width() < 1024) {
-        $('.social').css('opacity', 1)
-      } else {
-        $('.social').css('opacity', 0)
-      }
+      // if ($(window).width() < 1024) {
+      //   $('.social').css('opacity', 1)
+      // } else {
+      //   $('.social').css('opacity', 0)
+      // }
 
     })
     $('.mobile-a').on('click', function() {
@@ -45,7 +45,6 @@ class Header extends Component {
       </div>
       <div className="social">
         <input id="mobile" type="checkbox"/>
-
         <label htmlFor="mobile">
           <span></span>
           <span></span>
@@ -67,9 +66,9 @@ class Header extends Component {
             </li>
           </ul>
         </nav>
-        <a target="_blank" rel="noopener noreferrer" href="https://github.com/aleodev" id="github"><img id="social" src="/assets/img/social/github.png.gz"/></a>
-        <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/Alexodev_" id="twitter"><img id="social" src="/assets/img/social/twitter.png.gz"/></a>
-        <a target="_blank" rel="noopener noreferrer" href="https://instagram.com/" id="instagram"><img id="social" src="/assets/img/social/instagram.png.gz"/></a>
+        <a target="_blank" rel="noopener noreferrer" href="https://github.com/aleodev" id="github"><img id="socialmedia" src="/assets/img/social/github.png.gz"/></a>
+        <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/Alexodev_" id="twitter"><img id="socialmedia" src="/assets/img/social/twitter.png.gz"/></a>
+        <a target="_blank" rel="noopener noreferrer" href="https://instagram.com/" id="instagram"><img id="socialmedia" src="/assets/img/social/instagram.png.gz"/></a>
       </div>
     </header>)
   }
