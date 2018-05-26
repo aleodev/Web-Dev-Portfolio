@@ -18,6 +18,7 @@ $blackColor: #000000;
   padding: 20px 0 25px;
   transition: 0.5s linear all;
   z-index: 999;
+  opacity: 0;
 
   a {
     @media screen and (max-width: 520px) {
@@ -37,7 +38,6 @@ $blackColor: #000000;
   .logo {
     @extend %headerDiv;
     margin-top: -20px;
-    opacity: 0;
 
     img {
       max-width: 80px;
@@ -57,7 +57,6 @@ $blackColor: #000000;
 
   .social {
     @extend %headerDiv;
-    opacity: 0;
 
     input {
       opacity: 0;

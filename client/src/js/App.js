@@ -9,12 +9,10 @@ class App extends Component {
     $('#site').delay(100).animate({
       opacity: 1
     }, 700)
-    $('.logo').delay(500).animate({
+    $('.header').delay(200).animate({
       opacity: 1
     }, 700)
-    $('.social').delay(500).animate({
-      opacity: 1
-    }, 700)
+
     sr.reveal('.name', {
       origin: 'top',
       duration: 1000,

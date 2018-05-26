@@ -2,8 +2,8 @@ import React, {Component} from 'react'
 import $ from 'jquery'
 
 class Header extends Component {
-  componentDidMount() {
-    $(window).scroll(function() {
+  componentDidMount () {
+    $(window).scroll(function () {
       var scroll = $(window).scrollTop()
       if (scroll >= 100) {
         $('.header').addClass('blackheader')
@@ -11,7 +11,7 @@ class Header extends Component {
         $('.header').removeClass('blackheader')
       }
     })
-    $(window).on('load resize scroll click', function() {
+    $(window).on('load resize scroll click', function () {
       var offsetTop = $('#about-page').offset().top
       var scroll = $(window).scrollTop()
       if ($(window).width() < 1100 || scroll > offsetTop - 1) {
@@ -19,20 +19,13 @@ class Header extends Component {
       } else {
         $('.header').removeClass('smallheader')
       }
-      // if ($(window).width() < 1024) {
-      //   $('.social').css('opacity', 1)
-      // } else {
-      //   $('.social').css('opacity', 0)
-      // }
-
     })
-    $('.mobile-a').on('click', function() {
-      $("#mobile").prop("checked", false)
+    $('.mobile-a').on('click', function () {
+      $('#mobile').prop('checked', false)
     })
-
   }
 
-  render() {
+  render () {
     return (<header className="header">
       <div className="logo">
         <a href="#"><img id="logo" src="/assets/img/logo.png.gz"/></a>
