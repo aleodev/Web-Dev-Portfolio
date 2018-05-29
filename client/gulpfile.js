@@ -3,7 +3,7 @@ const sass = require('gulp-sass')
 const autoprefixer = require('gulp-autoprefixer')
 
 gulp.task('default', ['css'], () => {
-  gulp.watch("./src/sass/**.scss", ['css'])
+  gulp.watch(["./src/sass/*/**.scss", "./src/sass/**.scss"], ['css'])
 })
 
 gulp.task('css', () => {
