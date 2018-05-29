@@ -13,24 +13,7 @@ class App extends Component {
       opacity: 1
     }, 700)
 
-    sr.reveal('.name', {
-      origin: 'top',
-      duration: 1000,
-      delay: 150,
-      distance: '200px',
-      scale: 1,
-      easing: 'ease',
-      opacity: 0
-    })
-    sr.reveal('.text', {
-      origin: 'bottom',
-      duration: 1000,
-      delay: 150,
-      distance: '200px',
-      scale: 1,
-      easing: 'ease',
-      opacity: 0
-    })
+
   }
   render () {
     return (<div id="site">
