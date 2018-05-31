@@ -2,7 +2,6 @@ import React, {Component} from 'react'
 import Header from './containers/Header'
 import Main from './containers/Main'
 import $ from 'jquery'
-import sr from './pckgs/scrollReveal.js'
 
 class App extends Component {
   componentDidMount () {
