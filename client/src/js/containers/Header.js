@@ -28,7 +28,7 @@ class Header extends Component {
   render () {
     return (<header className="header">
       <div className="logo">
-        <a href="#"><img id="logo" src="/assets/img/logo.png.gz"/></a>
+        <a href="#home-page"><img alt="logo" id="logo" src="/assets/img/logo.png.gz"/></a>
       </div>
       <div className="menu">
         <a href="#home-page" id="home">Home</a>
@@ -59,9 +59,9 @@ class Header extends Component {
             </li>
           </ul>
         </nav>
-        <a target="_blank" rel="noopener noreferrer" href="https://github.com/aleodev" id="github"><img id="socialmedia" src="/assets/img/social/github.png.gz"/></a>
-        <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/Alexodev_" id="twitter"><img id="socialmedia" src="/assets/img/social/twitter.png.gz"/></a>
-        <a target="_blank" rel="noopener noreferrer" href="https://instagram.com/" id="instagram"><img id="socialmedia" src="/assets/img/social/instagram.png.gz"/></a>
+        <a target="_blank" rel="noopener noreferrer" href="https://github.com/aleodev" id="github"><img alt="github" id="socialmedia" src="/assets/img/social/github.png.gz"/></a>
+        <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/Alexodev_" id="twitter"><img alt="twitter" id="socialmedia" src="/assets/img/social/twitter.png.gz"/></a>
+        <a target="_blank" rel="noopener noreferrer" href="https://instagram.com/" id="instagram"><img alt="instagram" id="socialmedia" src="/assets/img/social/instagram.png.gz"/></a>
       </div>
     </header>)
   }
