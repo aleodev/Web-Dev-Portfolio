@@ -25,20 +25,27 @@ class About extends Component {
      // Outer loop to create parent
      for (let i = 0; i < 7; i++) {
        let skillinfo = []
-       let skillLevel = [10, 50, 10, 50, 10, 50, 10]
+       let skillLevel = [80, 65, 69, 67, 70, 79, 60]
+       let skillNames = ['HTML & CSS', 'SASS', 'Javascript', 'React', 'Node.js', 'Webpack', 'Gulp']
+       let skillDescriptions = ['HTML ','Base html page with css styling. ', 'Base html page with css styling. ', 'Base html page with css styling. ', 'Base html page with css styling. ', 'Base html page with css styling. ', 'Base html page with css styling. ']
        let bar = []
        //Inner loop to create children
-        skillinfo.push(<div className="skillinfo">
-                  <div className="skill-img"><img src={`/assets/img/skills/${i}.png.gz`}/></div>
+        skillinfo.push(<div className="skill-item" key={i}>
+                  <div className="skill-img"><img alt={skillNames[i]} src={`/assets/img/skills/${i}.png.gz`}/></div>
+                  <div className="skill-info">
+                  <div className="skill-name">{skillNames[i]}</div>
+                  <br/>
+                  <div className="skill-description">{skillDescriptions[i]}</div>
+                  </div>
                   </div>)
 
-        //Inner loop to create children
-         bar.push(<div className="bar">
+        //Uses for loop value to push bar values
+         bar.push(<div className="bar" key={i}>
            <div className="bar-inside" style={{width: `${skillLevel[i]}%`}}></div>
          </div>)
 
-       //Create the parent and add the children
-       table.push(<div className="skill">{skillinfo}{bar}</div>)
+       //Pushes skill info and the bar to table
+       table.push(<div className="skill" key={i}>{skillinfo}{bar}</div>)
      }
      return table
    }
@@ -48,8 +55,7 @@ class About extends Component {
       <div className="about-me-side item">
         <h1>About Me</h1>
         <hr/>
-        <h2>I'm a front end developer based in the heart of
-          <span>New York City</span>.</h2>
+        <h2>I'm a front end developer based in the heart of <span>New York City</span>.</h2>
         <p>- I'm in love with the concept of thoughts being turned into a reality. Whether it'd be a website design, or a photo, turning these storms of thought into a functional form makes me smile like nothing else.
         </p>
         <img src="/assets/img/portrait.jpg.gz" alt="Highschool Prom"/>
