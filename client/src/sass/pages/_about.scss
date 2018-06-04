@@ -1,4 +1,10 @@
 // ABOUT // // ABOUT // // ABOUT //
+// WIDTH PAGE-CONTAINER-BREAKPOINTS //
+$about-xss: 0;
+$about-xs: 420px;
+$about-sm: 800px;
+$about-md: 1100px;
+$about-lg: 1368px; // WIDTH PAGE-CONTAINER-BREAKPOINTS //
 
 %sub-skill {
   margin-left: 40px;
@@ -40,12 +46,11 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 0.9fr;
-  -webkit-box-shadow: 0px 0px 20px 8px rgba(0,0,0,0.75);
-  -moz-box-shadow: 0px 0px 20px 8px rgba(0,0,0,0.75);
-  box-shadow: 0px 0px 20px 8px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 0 0 20px 8px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0 0 20px 8px rgba(0,0,0,0.75);
+  box-shadow: 0 0 20px 8px rgba(0,0,0,0.75);
 
   .item {
-    color: white;
     font-size: 2em;
 
     h1 {
@@ -110,8 +115,47 @@
   .service-side {
     margin: 0 3vh 4vh;
 
-    li {
-      color: #242424;
+    .service-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+
+      .service {
+        display: inline-block;
+        .vl {
+          border-left: 2px solid #333;
+          height: 90%;
+        }
+        h1 {
+          font-family: Raleway;
+          text-align: center;
+          font-size: 60%;
+          margin: 0 !important;
+          font-style: normal;
+          font-weight: 300;
+          color: #333;
+
+          span {
+            font-weight: 700;
+          }
+        }
+
+        p {
+          color: black;
+          margin-top: 40px;
+        }
+
+        .login-icon {
+          text-align: center;
+
+          i {
+            border: #333 solid 4px;
+            color: #333;
+            padding: 20px;
+            border-radius: 50%;
+            margin: 20px;
+          }
+        }
+      }
     }
   }
 
