@@ -56,7 +56,7 @@ class About extends Component {
         <h1>About Me</h1>
         <hr/>
         <h2>I'm a front end developer based in the heart of <span>New York City</span>.</h2>
-        <p>- I'm in love with the concept of thoughts being turned into a reality. Whether it'd be a website design, or a photo, turning these storms of thought into a functional form makes me smile like nothing else.
+        <p>Hello, my name is Alex Ortiz. I'm in love with the concept of thoughts being turned into a reality. Whether it'd be a website design, or a photo, turning these storms of thought into a functional form makes me smile like nothing else.
         </p>
         <img src="/assets/img/portrait.jpg.gz" alt="Highschool Prom"/>
         <p>- I also enjoy cooking, excersizing, gaming, and even walks at the park!
@@ -65,6 +65,29 @@ class About extends Component {
       <div className="service-side item">
         <h1>Services</h1>
         <hr/>
+        <div className="service-grid">
+        <div className="service">
+          <h1><span>RESPONSIVE</span> CODE</h1>
+            <div className='login-icon'><i className="fa fa-expand" aria-hidden="true"></i></div>
+
+          <p></p>
+          <div class="vl"></div>
+        </div>
+
+        <div className="service">
+          <h1><span>FRONT-END</span> DEVELOPMENT</h1>
+            <div className='login-icon'><i className="fa fa-expand" aria-hidden="true"></i></div>
+
+          <p></p>
+          <div class="vl"></div>
+        </div>
+
+        <div className="service">
+          <h1>Responsive Code</h1>
+            <div className='login-icon'><i className="fa fa-expand" aria-hidden="true"></i></div>
+
+        </div>
+      </div>
       </div>
       <div className="skills-side item">
         <h1>Skills</h1>
