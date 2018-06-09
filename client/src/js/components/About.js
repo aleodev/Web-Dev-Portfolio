@@ -6,7 +6,13 @@ class About extends Component {
     sr.reveal('.service-side', this.aboutReveal('left'))
     sr.reveal('.skills-side', this.aboutReveal('right'))
     sr.reveal('.skill', {
-      duration: 2000
+      duration: 1500
+    }, 300);
+    sr.reveal('.service', {
+      duration: 1500
+    }, 300);
+    sr.reveal('.port', {
+      duration: 3000
     }, 300);
   }
   aboutReveal = (side) => {
@@ -88,7 +94,7 @@ class About extends Component {
             <span> New York City</span>.</h2>
           <p>Hello, my name is Alex Ortiz. I'm in love with the concept of thoughts being turned into a reality. Whether it'd be a website design, or a photo, turning these storms of thought into a functional form makes me smile like nothing else.
           </p>
-          <img src="/assets/img/portrait.jpg.gz" alt="Highschool Prom" />
+          <img className="port" src="/assets/img/portrait.jpg.gz" alt="Highschool Prom" />
           <p>- I also enjoy cooking, excersizing, gaming, and even walks at the park!
           </p>
       </div>
@@ -103,28 +109,34 @@ class About extends Component {
                   <div className='login-icon'>
                       <i className="fa fa-expand" aria-hidden="true"></i>
                   </div>
+                  <p>I bring compatibility across all devices, big or small, mobile or full desktop using the latest grid systems.</p>
+
               </div>
               <div className="service">
                   <h1>
                 <span>FRONT-END </span>
                 DEVELOPMENT</h1>
                   <div className='login-icon'>
-                      <i className="fa fa-expand" aria-hidden="true"></i>
+                      <i className="fa fa-laptop" aria-hidden="true"></i>
                   </div>
+                  <p>I build next-generation web products using best-in practice technologies &
+frameworks.</p>
               </div>
               <div className="service">
                   <h1><span>UI/UX</span> DESIGN</h1>
                   <div className='login-icon'>
-                      <i className="fa fa-expand" aria-hidden="true"></i>
+                      <i className="fa fa-magic" aria-hidden="true"></i>
                   </div>
+                  <p>I love shaping your product from research to interaction to pixels, thus defining how easy a product is to use.</p>
               </div>
           </div>
       </div>
       <div className="skills-side item">
           <h1>Skills</h1>
-          <hr/> {this.createSkills()}
+          <hr/>
+          {this.createSkills()}
+          <div className='skill'><p>Other skills include...  <img src="/assets/img/skills/7.png.gz"/> <img src="/assets/img/skills/8.png.gz"/> <img src="/assets/img/skills/9.png.gz"/></p></div>
       </div>
-
   </section>
   )
   }
