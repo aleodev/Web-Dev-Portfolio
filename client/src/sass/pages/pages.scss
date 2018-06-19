@@ -3,10 +3,9 @@
 @import 'works';
 @import 'contact';
 body {
-  display: grid;
   font-family: sans-serif;
   background-color: black;
-  width: $body-width;
+
 }
 
 .grid-wrapper {

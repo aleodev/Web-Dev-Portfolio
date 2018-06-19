@@ -60,6 +60,9 @@ $about-lg: 1500px;
       color: #111111;
       font-family: Didot;
       font-style: italic;
+      @media screen and (max-width: $about-lg) {
+        font-size: 40px;
+      }
     }
 
     hr {

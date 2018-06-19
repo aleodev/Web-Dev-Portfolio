@@ -1,9 +1,11 @@
 @import 'reset';
+@import 'variables';
 @import 'pageSwitcher';
 @import 'fonts';
 @import 'header';
 @import 'pages/pages';
 
-#site{
+
+#site {
   opacity: 0;
 }
