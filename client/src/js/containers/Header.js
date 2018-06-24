@@ -20,8 +20,12 @@ class Header extends Component {
         $('.header').removeClass('smallheader')
       }
     })
-    $('.mobile-a').on('click', function () {
-      $('#mobile').prop('checked', false)
+    $('#mobile').on('click', function () {
+      if ($('#mobile').prop('checked') === true){
+        $('body').css('margin-right', '400px')
+      } else {
+        $('body').css('margin-right', '0')
+      }
     })
   }
 
