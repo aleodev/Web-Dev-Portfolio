@@ -90,22 +90,23 @@ class About extends Component {
       <div className="about-me-side item">
           <h1>About Me</h1>
           <hr/>
+          <div className="about-info">
           <h2>I'm a front end developer based in the heart of
             <span> New York City</span>.</h2>
           <p>Hello, my name is Alex Ortiz. I'm in love with the concept of thoughts being turned into a reality. Whether it'd be a website design, or a photo, turning these storms of thought into a functional form makes me smile like nothing else.
           </p>
-          <img className="port" src="/assets/img/portrait.jpg.gz" alt="Highschool Prom" />
           <p>- I also enjoy cooking, excersizing, gaming, and even walks at the park!
-          </p>
+          </p></div>
+          <img className="port" src="/assets/img/portrait.jpg.gz" alt="Highschool Prom" />
       </div>
       <div className="service-side item">
           <h1>Services</h1>
           <hr/>
           <div className="service-grid">
               <div className="service">
-                  <h1>
+                  <div className="service-head">
                 <span>RESPONSIVE </span>
-                CODE</h1>
+                CODE</div>
                   <div className='login-icon'>
                       <i className="fa fa-expand" aria-hidden="true"></i>
                   </div>
@@ -113,9 +114,9 @@ class About extends Component {
 
               </div>
               <div className="service">
-                  <h1>
+                  <div className="service-head">
                 <span>FRONT-END </span>
-                DEVELOPMENT</h1>
+                DEVELOPMENT</div>
                   <div className='login-icon'>
                       <i className="fa fa-laptop" aria-hidden="true"></i>
                   </div>
@@ -123,7 +124,7 @@ class About extends Component {
 frameworks.</p>
               </div>
               <div className="service">
-                  <h1><span>UI/UX</span> DESIGN</h1>
+                  <div className="service-head"><span>UI/UX</span> DESIGN</div>
                   <div className='login-icon'>
                       <i className="fa fa-magic" aria-hidden="true"></i>
                   </div>
