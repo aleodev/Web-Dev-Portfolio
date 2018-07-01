@@ -2,10 +2,10 @@
 @import 'about';
 @import 'works';
 @import 'contact';
+
 body {
   font-family: sans-serif;
   background-color: black;
-
 }
 
 .grid-wrapper {
@@ -14,4 +14,10 @@ body {
   grid-template-rows: 1fr;
   height: 100vh;
   overflow: auto;
+}
+
+.section-page {
+  height: auto;
+  top: 0;
+  left: 0;
 }
