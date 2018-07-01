@@ -14,18 +14,14 @@ class Header extends Component {
     $(window).on('load resize scroll click', function () {
       var offsetTop = $('#about-page').offset().top
       var scroll = $(window).scrollTop()
-      if ($(window).width() < 1100 || scroll > offsetTop /2) {
+      if ($(window).width() < 1055 || scroll > offsetTop / 2) {
         $('.header').addClass('smallheader')
       } else {
         $('.header').removeClass('smallheader')
       }
     })
-    $('#mobile').on('click', function () {
-      if ($('#mobile').prop('checked') === true){
-        $('body').css('margin-right', '400px')
-      } else {
-        $('body').css('margin-right', '0')
-      }
+    $('.mobile-a').on('click', function () {
+      $('#mobile').prop('checked', false)
     })
   }
 
