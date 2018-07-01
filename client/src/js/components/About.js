@@ -90,8 +90,7 @@ class About extends Component {
         <h1>About Me</h1>
         <hr/>
         <div className="about-info">
-          <h2>I&apos;m a front end developer based in the heart of <br/><span>New York City</span>.</h2>
-          <p>Hello, my name is Alex Ortiz. I&apos;m in love with the concept of thoughts being turned into a reality. Whether it&apos;d be a website design, or a photo, turning these storms of thought into a functional form makes me smile like nothing else.</p>
+          <p>Hello, my name is Alex Ortiz and I&apos;m a front end developer based in the heart of New York City. I&apos;m in love with the concept of thoughts being turned into a reality. Whether it&apos;d be a website design, or a photo, turning these storms of thought into a functional form makes me smile like nothing else.</p>
         </div>
       </div>
       <div className="service-side item">
@@ -100,7 +99,7 @@ class About extends Component {
         <div className="service-grid">
           <div className="service">
             <div className="service-head">
-              <span>RESPONSIVE</span> CODE</div>
+              <span>RESPONSIVE</span><br/>CODE</div>
             <div className='login-icon'>
               <i className="fa fa-expand" aria-hidden="true"></i>
             </div>
@@ -109,7 +108,7 @@ class About extends Component {
           </div>
           <div className="service">
             <div className="service-head">
-              <span>FRONT-END</span> DEVELOPMENT</div>
+              <span>FRONT-END</span><br/>DEVELOPMENT</div>
             <div className='login-icon'>
               <i className="fa fa-laptop" aria-hidden="true"></i>
             </div>
@@ -117,7 +116,7 @@ class About extends Component {
           </div>
           <div className="service">
             <div className="service-head">
-              <span>UI/UX</span> DESIGN</div>
+              <span>UI/UX</span><br/>DESIGN</div>
             <div className='login-icon'>
               <i className="fa fa-magic" aria-hidden="true"></i>
             </div>
