@@ -11,9 +11,8 @@ class App extends Component {
     $('.header').delay(200).animate({
       opacity: 1
     }, 700)
-
-
   }
+
   render () {
     return (<div id="site">
       <Header></Header>
