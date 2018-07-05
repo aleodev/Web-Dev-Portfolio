@@ -2,7 +2,8 @@ import React from 'react'
 
 const Contact = (props) => {
   return (
-    <section id="contact-page"></section>
+    <section id="contact-page">
+    Contact</section>
   )
 }
 
