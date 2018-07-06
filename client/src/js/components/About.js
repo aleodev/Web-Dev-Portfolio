@@ -11,9 +11,6 @@ class About extends Component {
     sr.reveal('.service', {
       duration: 1500
     }, 300)
-    sr.reveal('.port', {
-      duration: 3000
-    }, 300)
   }
   aboutReveal = (side) => {
     var config = {
