@@ -1,52 +1,65 @@
 // WORKS // // WORKS // // WORKS //
 
 #works-page {
-  background: linear-gradient(181deg, #1d1d1d, #000000);
-  background-size: 400% 400%;
-  -webkit-animation: works 10s ease infinite;
-  -moz-animation: works 10s ease infinite;
-  animation: works 10s ease infinite;
-  @-webkit-keyframes works {
-    0% {
-      background-position: 31% 0;
-    }
-
-    50% {
-      background-position: 70% 100%;
-    }
-
-    100% {
-      background-position: 31% 0;
-    }
-  }
-  @-moz-keyframes works {
-    0% {
-      background-position: 31% 0;
-    }
-
-    50% {
-      background-position: 70% 100%;
-    }
-
-    100% {
-      background-position: 31% 0;
-    }
-  }
-  @keyframes works {
-    0% {
-      background-position: 31% 0;
-    }
-
-    50% {
-      background-position: 70% 100%;
-    }
-
-    100% {
-      background-position: 31% 0;
-    }
-  }
+  background-color: black;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   height: auto;
   top: 0;
   left: 0;
+  // -webkit-animation: works 10s ease infinite;
+  // -moz-animation: works 10s ease infinite;
+  // animation: works 10s ease infinite;
+  // @-webkit-keyframes works {
+  //   0% {background-position: 31% 0;}
+  //   50% {background-position: 70% 100%;}
+  //   100% {background-position: 31% 0;}
+  // }
+  // @-moz-keyframes works {
+  //   0% {background-position: 31% 0;}
+  //   50% {background-position: 70% 100%;}
+  //   100% {background-position: 31% 0;}
+  // }
+  // @keyframes works {
+  //   0% {background-position: 31% 0;}
+  //   50% {background-position: 70% 100%;}
+  //   100% {background-position: 31% 0;}
+  // }
+  @media screen and (max-width: 800px) {
+    display: block;
+  }
+
+  .block {
+    height: 50vh;
+    cursor: pointer;
+    opacity: 0.5;
+    &:hover {
+      opacity: 1;
+    }
+    @media screen and (max-width: 800px) {
+      display: block;
+    }
+  }
+
+  .work-1 {
+    background-image: url("https://www.planwallpaper.com/static/images/7004205-cool-black-backgrounds-27640_lhK8IKI.jpg");
+    background-position: center;
+  }
+
+  .work-2 {
+    background-image: url("http://hdwpro.com/wp-content/uploads/2017/01/3D-Cool-Image.jpg");
+    background-position: center;
+  }
+
+  .work-3 {
+    background-image: url("http://www.wallpapereast.com/static/images/skull-wallpaper-3.jpg");
+    background-position: right;
+  }
+
+  .work-4 {
+    background-image: url("http://kb4images.com/images/cool-image/35942458-cool-image.jpg");
+    background-position: center;
+  }
 }
 // WORKS // // WORKS // // WORKS //
