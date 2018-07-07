@@ -87,7 +87,9 @@ class About extends Component {
         <h1>About Me</h1>
         <hr/>
         <div className="about-info">
-          <p>Hello, my name is Alex Ortiz and I&apos;m a front end developer based in the heart of New York City. I&apos;m in love with the concept of thoughts being turned into a reality. Whether it&apos;d be a website design, or a photo, turning these storms of thought into a functional form makes me smile like nothing else.</p>
+          <p>Hello, my name is Alex Ortiz and I'm a front end developer several artistic mediums, including Adobe Lightroom and Photoshop CS6, and Photography based in the heart of New York City. I'm in love with the concept of thoughts being turned into a reality. Whether it'd be a website design, or a photo, turning these storms of thought into a functional form makes me smile like nothing else. </p>
+          <br/>
+          <p>For more information on my work, pre-existing skills and background experience please review my <a href="https://github.com/aleodev">Github</a> profile. <a href="#">Here</a> is my downloadable resume.</p>
         </div>
       </div>
       <div className="service-side item">
