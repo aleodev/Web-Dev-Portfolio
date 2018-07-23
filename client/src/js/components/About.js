@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import sr from '../pckgs/scrollReveal.js'
 class About extends Component {
-  componentDidMount () {
+  componentDidMount() {
     sr.reveal('.about-me-side', this.aboutReveal('top'))
     sr.reveal('.service-side', this.aboutReveal('left'))
     sr.reveal('.skills-side', this.aboutReveal('right'))
@@ -71,8 +71,8 @@ class About extends Component {
       //  Uses for loop value to push bar values
       bar.push(<div className="bar" key={i}>
         <div className="bar-inside" style={{
-          width: `${skillLevel[i]}%`
-        }}></div>
+            width: `${skillLevel[i]}%`
+          }}></div>
       </div>)
 
       //  Pushes skill info and the bar to table
@@ -81,15 +81,20 @@ class About extends Component {
     return table
   }
 
-  render () {
+  render() {
     return (<section className="section-page" id="about-page">
       <div className="about-me-side item">
         <h1>About Me</h1>
         <hr/>
         <div className="about-info">
-          <p>Hello, my name is Alex Ortiz and I&apos;m a front end developer several artistic mediums, including Adobe Lightroom and Photoshop CS6, and Photography based in the heart of New York City. I&apos;m in love with the concept of thoughts being turned into a reality. Whether it&apos;d be a website design, or a photo, turning these storms of thought into a functional form makes me smile like nothing else. </p>
+          <p>Hello, my name is Alex Ortiz and I&apos;m a front end developer several artistic mediums, including Adobe Lightroom and Photoshop CS6, and Photography based in the heart of New York City. I&apos;m in love with the concept of thoughts being turned into a reality. Whether it&apos;d be a website design, or a photo, turning these storms of thought into a functional form makes me smile like nothing else.
+          </p>
           <br/>
-          <p>For more information on my work, pre-existing skills and background experience please review my <a href="https://github.com/aleodev">Github</a> profile. <a href="http://localhost:3000/">Here</a> is my downloadable resume.</p>
+          <p>For more information on my work, pre-existing skills and background experience please review my
+            <a href="https://github.com/aleodev">Github</a>
+            profile.
+            <a href="http://localhost:3000/">Here</a>
+            is my downloadable resume.</p>
         </div>
       </div>
       <div className="service-side item">
@@ -99,8 +104,10 @@ class About extends Component {
           <div className="service">
             <div className="service-head">
               <span>RESPONSIVE</span><br/>CODE</div>
-            <div className='login-icon'>
-              <i className="fa fa-expand" aria-hidden="true"></i>
+            <div className="icon">
+              <div className='login-icon'>
+                <i className="fa fa-expand" aria-hidden="true"></i>
+              </div>
             </div>
             <p>I bring compatibility across all devices, big or small, mobile or full desktop using the latest grid systems.</p>
 
@@ -108,16 +115,20 @@ class About extends Component {
           <div className="service">
             <div className="service-head">
               <span>FRONT-END</span><br/>DEVELOPMENT</div>
-            <div className='login-icon'>
-              <i className="fa fa-laptop" aria-hidden="true"></i>
+            <div className="icon">
+              <div className='login-icon'>
+                <i className="fa fa-laptop" aria-hidden="true"></i>
+              </div>
             </div>
             <p>I build next-generation web products using best-in practice technologies & frameworks.</p>
           </div>
           <div className="service">
             <div className="service-head">
               <span>UI/UX</span><br/>DESIGN</div>
-            <div className='login-icon'>
-              <i className="fa fa-magic" aria-hidden="true"></i>
+            <div className="icon">
+              <div className='login-icon'>
+                <i className="fa fa-magic" aria-hidden="true"></i>
+              </div>
             </div>
             <p>I love shaping your product from research to interaction to pixels, thus defining how easy a product is to use.</p>
           </div>

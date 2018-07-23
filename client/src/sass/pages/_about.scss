@@ -150,7 +150,7 @@ $about-lg: 1500px; // WIDTH PAGE-CONTAINER-BREAKPOINTS //
           margin: auto 30px;
           line-height: 1.3em;
           @media screen and (max-width: $about-lg) {
-            margin: 30px 10px !important;
+            margin: 0 10px !important;
             font-size: 14px;
           }
         }
