@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import sr from '../pckgs/scrollReveal.js'
 class About extends Component {
-  componentDidMount() {
+  componentDidMount () {
     sr.reveal('.about-me-side', this.aboutReveal('top'))
     sr.reveal('.service-side', this.aboutReveal('left'))
     sr.reveal('.skills-side', this.aboutReveal('right'))
@@ -71,8 +71,8 @@ class About extends Component {
       //  Uses for loop value to push bar values
       bar.push(<div className="bar" key={i}>
         <div className="bar-inside" style={{
-            width: `${skillLevel[i]}%`
-          }}></div>
+          width: `${skillLevel[i]}%`
+        }}></div>
       </div>)
 
       //  Pushes skill info and the bar to table
@@ -81,7 +81,7 @@ class About extends Component {
     return table
   }
 
-  render() {
+  render () {
     return (<section className="section-page" id="about-page">
       <div className="about-me-side item">
         <h1>About Me</h1>
