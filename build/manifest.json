@@ -1,9 +1,9 @@
 {
   "short_name": "Alex Ortiz",
-  "name": "Alex Ortiz Portfolio",
+  "name": "Alex Ortiz. Front-end Developer",
   "icons": [
     {
-      "src": "/assets/favicon.ico",
+      "src": "favicon.ico",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     }
